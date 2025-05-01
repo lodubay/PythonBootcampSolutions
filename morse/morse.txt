@@ -1,0 +1,69 @@
+
+Group Challenge: Morse Code
+
+Each member of your group has received a fragment of a transmission in Morse 
+code. Buried somewhere within that transmission is a secret message that you
+must report to your superiors as soon as possible. Each of you must write a
+program which can decode a message written in Morse code, and run that program
+on your message fragment. You may work together to develop your code, but each
+team member must write their own program, and you may not share your message
+fragments before you decode them. Good luck!
+
+Details - Morse code is a character-encoding scheme that allows operators to
+send messages using a series of electrical pulses represented as short or long
+pulses, a.k.a. dots and dashes. It was invented by Samuel F. B. Morse.
+
+Hint: We recommend starting by implementing the following mapping as a
+dictionary.
+
+Alphabet
+A	.-
+B	-...
+C	-.-.
+D	-..
+E	.
+F	..-.
+G	--.
+H	....
+I	..
+J	.---
+K	-.-
+L	.-..
+M	--
+N	-.
+O	---
+P	.--.
+Q	--.-
+R	.-.
+S	...
+T	-
+U	..-
+V	...-
+W	.--
+X	-..-
+Y	-.--
+Z	--..
+
+Numbers
+0	-----
+1	.----
+2	..---
+3	...--
+4	....-
+5	.....
+6	-....
+7	--...
+8	---..
+9	----.
+
+Punctuation
+.	.-.-.-
+,	--..--
+?	..--..
+'	.----.
+!	-.-.--
+/	-..-.
+(	-.--.
+)	-.--.-
+&	.-...
+-	-....-
