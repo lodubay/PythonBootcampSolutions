@@ -4,7 +4,7 @@ This script prepares the Morse Code challenge message for each group.
 import os
 import random
 
-GROUPSIZE = 4 # number of students in each group
+GROUPSIZE = 3 # number of students in each group
 
 
 def main():
@@ -33,14 +33,14 @@ def main():
     morse_key = import_key(os.path.join(filedir, 'KEY.txt'))
     for i, order in enumerate(new_order):
         coded_message = encode(segments[i], morse_key)
-        fname = f'SEGMENT{order+1}.txt'
+        fname = f'SEGMENT{GROUPSIZE}-{order+1}.txt'
         with open(os.path.join(filedir, fname), 'w') as f:
             f.write(coded_message)
     # Test
     decoded_segments = []
     for order in new_order:
         coded_message = []
-        fname = f'SEGMENT{order+1}.txt'
+        fname = f'SEGMENT{GROUPSIZE}-{order+1}.txt'
         with open(os.path.join(filedir, fname), 'r') as f:
             coded_message = f.readlines()
         coded_message = ''.join(coded_message)
